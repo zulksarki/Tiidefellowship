@@ -1,0 +1,201 @@
+/*https://unsplash.com/photos/8bghKxNU1j0*/
+
+/* importing fornt famaily*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* HEADER SECTION*/
+
+header{
+    background-image: url("https://images.unsplash.com/photo-1597733336794-12d05021d510?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    background-size: cover;
+    background-position: 50%;
+    height: 80vh;
+    position: relative;
+
+}
+
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    width: 100%;
+}
+.header-content-wrapper{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+    /* LOGO*/
+    .logo {
+    font: 30xp;
+    font-weight: bold;
+    color: #f9320a;
+    }
+
+    
+    /* NAVLINKS*/
+    .nav-link {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none; /* remove underline*/
+        transition: 0.5s;
+        padding: 10px;
+        margin: 10px;
+    }
+
+
+    .nav-link.active {
+        color: skyblue;
+    }
+    .hero-wrapper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+    }
+ 
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .full-name {
+        color: #fff;
+        font-size: 35px;
+        text-transform: uppercase;
+        margin: 10px 0;
+
+    }
+    .brief {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px ;
+    }
+/* icons */
+    .hero-media-wrapper svg {
+        width: 30px;
+        height: 30px;
+        fill: #fff;
+        border: 1px solid skyblue;
+        border-radius: 50px;
+        padding: 4px;
+        margin: 10px;
+        transition: 0.5s;
+    } 
+
+    .btn {
+        background-color: #f9320a;
+color: #fff;
+font-size: 12px;
+font-weight: bold;
+text-decoration: none;
+padding: 10px 14px;
+border-radius: 26px;
+border: none;
+margin: 10px;
+letter-spacing: 1px;
+cursor: pointer;
+    }
+
+    .download-btn{
+        background-color: #fff;
+        color: #f9320a;
+    }
+
+    .download-btn:hover{
+        opacity: 0.8;
+        background-color: #f9320a;
+        color: #fff;
+
+
+    }
+
+    .contact-btn{
+        background-color: #fff;
+        color: #f9320a;
+    }
+
+    .contact-btn:hover{
+        opacity: 0.8;
+        background-color: #f9320a;
+        color: #fff;
+    }
+
+
+    .hero-media-wrapper svg:hover{
+        opacity: 0.8;
+        background-color: #f9320a;
+        color: #fff;
+    }
+
+/* MAIN BODY CONTENT */
+main {
+    margin-top: 90px;
+}
+
+.section{
+    padding: 40px;
+}
+
+.section h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: skyblue;
+    margin-bottom: 30px 0;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.about-me{
+    width: 70;
+    margin: 0 auto;
+
+}
+
+.about-brief{
+    text-align: center;
+    margin-top: 20px;
+    line-height: 2;
+
+}
+
+/* CURRENTLY WORKING AT */
+.place-of-work-section{
+    margin: 40px;
+    background-color: skyblue;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.place-of-work-section h2{
+    color: #fff;
+}
+.place-of-work-pill{
+    background-color: #f9320a;
+    color: skyblue;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 26px;
+    font-size: 14px;
+    transition: 1.5;
+
+}
