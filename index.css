@@ -173,76 +173,162 @@ main {
     line-height: 2;
 
 }
-
-/* CURRENTLY WORKING AT */
+/*CURRENTLY WORKING*/
 .place-of-work-section{
-    margin: 40px;
+    margin: 40px 0;
     background-color: skyblue;
     min-height: 300px;
-
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-
 .place-of-work-section h2{
-    color: #fff;
+    color: #ffff;
 }
-.place-of-work-pill{
-    background-color: #000000;
+.pills-wrapper{
+    text-align: center;
+    margin: 40px 20px;
+}
+.place-of-work-pills{
+    background-color: #000;
     color: #fff;
-    padding: 8px;
-    margin: 4px;
+    padding: 10px;
+    margin: 5px;
     border-radius: 26px;
     font-size: 14px;
-    transition: 1.5;
+    transition: .5s;
 
 }
-/* PROJECT CARDS*/
-.project-card-wrapper {
+.place-of-work-pills:hover{
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px; 
+}
+
+
+/*PROJECT-CARD*/
+
+.project-card-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    margin-top: 4rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
 
 }
-
 .project-card{
-padding: 10px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-transition: 0.3s;
-border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+
 }
 
-.project-card-img {
+.project-card img{
     width: 100%;
-    height: 200%;
-}
+    height: 150px;
+    padding: 5px;
+    border-radius: 10px;
 
-.card-content {
-    width: 300%;
-    padding: 2px 16px;
 }
-
-.project-title {
+.card-content{
+    width: 250px;
+    padding: 10px 15px;
+}
+.project-title{
     color: skyblue;
-    margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
-
-.project-links {
-  display: flex;  
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  gap: 10px;
-
+.project-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.project-links-svg {
+.project-links svg{
     width: 20px;
     height: 20px;
     fill: skyblue;
+    margin: 10px;
+}
+
+/* STACK SECTION*/
+
+/* WORK WITH ME FORM SECTION */
+.form-section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.form-group label{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.form-group input{
+    border: 1px solid skyblue;
+    font-size: 14px;
+    padding: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.form-group textarea{
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    margin-bottom: 10px;
+}
+.form-group button{
+    background-color: skyblue;
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 26px;
+    border: none;
+}
+
+
+/* SOCIAL MEDIA */
+.social-account-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.social-account-wrapper svg{
+    color: skyblue;
+    width: 30px;
+    height: 30px;
+}
+
+.social-account-wrapper svg:hover{
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+}
+.back-to-the-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back-to-the-top svg{
+    color: #000;
+    width: 50px;
+    height: 40px;
 }
